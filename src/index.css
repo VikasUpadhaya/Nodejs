@@ -1,0 +1,348 @@
+/* <..........................      .........................> */
+html,
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+
+.landingText {
+  z-index: 2;
+  -webkit-text-stroke: 2px black;
+}
+#landing-bg-div {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+}
+#landing-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+  opacity: 0.8;
+}
+#login-bg-div {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+  opacity: 0.8;
+}
+#login-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+.login-form-col {
+  background-color: #c0c0c0;
+  opacity: 0.9;
+}
+
+.form-rounded {
+  border-radius: 1rem;
+}
+
+.login-col {
+  margin-right: -15px;
+  opacity: 0.9;
+}
+.register-form-col {
+  background-color: #c0c0c0;
+  opacity: 0.9;
+}
+.register-col {
+  margin-left: -15px;
+  opacity: 0.9;
+}
+.center-text {
+  text-align: center;
+}
+.link {
+  color: #fff;
+}
+.link:hover {
+  color: grey;
+}
+.login-link {
+  color: #212529;
+}
+.login-link:hover {
+  color: seagreen;
+  font-weight: bold;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* <-------------------------pop-up-----------------------> */
+.container-select {
+  width: 90%;
+  border: 1px solid black;
+  height: 450px;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 10%;
+  overflow-y:auto
+}
+.left-arrow {
+  height: 20px;
+  margin-left: 3%;
+  /* margin-right:0%; */
+}
+
+.select-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 46px;
+  border-bottom: 1px solid #8a9393;
+  padding: 0 10px 0 10px;
+  position: fixed;
+  width: 442px;
+  background: white;
+}
+
+.select-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* padding: 3px 20px 3px; */
+  flex-direction: column;
+  margin-top:10%;
+}
+.select-list-item {
+  display: flex;
+  /* justify-content: space-around; */
+  justify-content: flex-start;
+  width: 100%;
+  border-bottom: 2px solid #d6d9d9;
+  align-items: center;
+  height: 80px;
+  padding-left: 40px;
+  cursor: pointer;
+}
+.select-list-item img {
+  width: 55px;
+  margin-right: 10px;
+}
+.select-list-item h5 {
+font-size: medium;}
+
+.modal-content {
+  height: 528px;
+  width: 600px;
+}
+
+.buyer-select-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.buyer-select-container > .btn,
+.btn {
+  text-transform: uppercase;
+  width: 47%;
+  height: 40px;
+}
+.select-icon {
+  width: 50px;
+  height: 50px;
+  background: #cec0c0;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  /* border-radius: 3px; */
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #807e7e; 
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #807e7e; 
+}
+
+
+
+/*----------------Forum Page--------------------*/
+.forum-bg {
+  background: url("./assets/images/forum.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  /* opacity: 0.8; */
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #f1f1eb12;
+}
+
+.forum-form {
+  width: 80%;
+  height: 750px;
+  margin-top: 5%;
+}
+
+.forum-form .forum-input {
+  background-color: transparent;
+  height: 50px;
+  border: 1px solid black;
+  color: darkblue;
+  font-weight: bold;
+}
+
+.forum-form .forum-input:focus {
+  background-color: transparent;
+  border: 1px solid white;
+  background-color: whitesmoke;
+  color: rgb(39, 137, 167);
+  opacity:0.7;
+  text-decoration: solid;
+  
+}
+.forum-form .forum-textarea {
+  background-color: transparent;
+  height: 180px;
+  border: 1px solid black;
+  color: darkblue;
+  font-weight: bold;
+}
+
+.forum-form .forum-textarea:focus {
+  background-color: transparent;
+  color: rgb(39, 137, 167);
+  background-color: whitesmoke;
+  border: 1px solid white;
+  text-decoration: solid;
+  opacity:0.7;
+}
+
+.forum-form label {
+  font-size: 20;
+  font-weight: bold;
+  color: black;
+}
+
+.btn-outline {
+  background: transparent !important;
+  border: 3px solid white !important;
+  color: #fff !important;
+  height: 55px !important;
+}
+.social-nav {
+  width: 80px;
+  height: 300px;
+  position: absolute;
+  left: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.social-nav .nav-item {
+  width: 75%;
+  text-align: center;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+/* <............................     .......................> */
+
+/*   */
+#main-page-img {
+  height: 750px;
+  width: 100%;
+}
+#main-page-img-div {
+  position: fixed;
+  top: -40%;
+  left: 0%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+#buyer-form {
+  margin-top: 250px;
+  opacity: 0.9;
+}
+
+.buyer-btn {
+  padding: 10px;
+}
+
+/* <............................      .......................> */
+#seller-bg-div {
+  position: fixed;
+  top: -40%;
+  left: 0%;
+  z-index: -1;
+  opacity: 0.7;
+}
+#seller-bg {
+  height: 750px;
+  width: 100%;
+}
+#formController {
+  width: 75%;
+  padding: 12px 20px;
+  margin: 175px 200px 50px 200px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: whitesmoke;
+  color: black;
+  opacity: 0.7;
+}
+#star {
+  color: red;
+}
+#predictionButton {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px 15px 0px;
+}
+/* <............................      .......................> */
+
+#about {
+  position: fixed; 
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
